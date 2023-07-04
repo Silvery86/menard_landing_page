@@ -100,23 +100,151 @@ ul > li > a:hover{
     position: relative;
     min-height: 100vh;
 }
+.section-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 5%;
+    float: left;
+    width: 100%;
+    background-image: url(../images/background_1-2.png);
+    height: 100%;
+}
 .content{
     text-align: center;
-    position: absolute;
     width: 100%;
     float: left;
-    bottom: 0;
-    left: 0;
-    padding-bottom: 15vh;
-
+    
 }
 .content > *{
     color: #ffffff;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
     padding: 10px 0;
+    line-height: 1.35;
+    
 }
 .content h3::after{
     border-bottom: #ffffff solid 2px;
     width: 25%;
+}
+.content h2{
+    font-size: 32px;
+    font-family: bodoni;
+}
+.content h1{
+    font-size: 42px;
+    font-family: bodoni;
+}
+.content h3{
+    font-size: 22px;
+    font-family: bodoni;
+}
+.content h5{
+    padding: 5px 0;
+    font-size: 15px;
+}
+.content .line{
+    height: 2px;
+    width: 50px;
+    background-color: #ffffff;
+    margin: 22px auto;
+    display: inline-block;
+    padding: 0;
+}
+/* Section 1 price content */
+.discount-content{
+    max-width: 600px;
+    margin: 20px auto;
+    height: max-content;
+   
+}
+.discount-content .price-content{
+    width: calc(60% - 10px);
+    border: 3px solid #ffffff;
+    text-align: center;
+    margin: 0 5px;
+    float: left;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.discount-content .register{
+    width: calc( 40% - 10px );
+    float: left;
+    margin: 0 5px;
+    height: 80px;
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    border-radius: 0;
+}
+.discount-content .price-content .price-title{
+    width: 50%;
+    font-size: 18px;
+    font-weight: 200;
+}
+.discount-content .price-content .price-detail{
+    width: 50%;
+    display: inline-block;
+    height: 100%;
+}
+.discount-content .price-content .price-detail .price-discount{
+    width: 100%;
+    height: 60%;
+    background-color: #ffffff;
+    color: #7a4077;
+    font-size: 30px;
+    font-weight: 200;
+    
+}
+.discount-content .price-content .price-detail .price{
+    width: 100%;
+    height: 40%;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: 100;
+    border: 3px solid #ffffff;
+    border-bottom: 0;
+    border-top: 0;
+}
+.discount-content .register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0;
+}
+.discount-content .register:hover{
+   background-color: #7a4077;
+   border: none;
+   transition: 0.5s;
+}
+.discount-content .register a{
+    font-size: 22px;
+    font-weight: 200;
+    color: #ffffff;
+    text-decoration: none;  
+}
+.discount-date{
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+    text-transform: none;
+    font-size: 15px;
+}
+
+/* Section 2 */
+.section-2{
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    width: 100%;
+    padding-bottom: 50px;
+    position: relative;
+    min-height: 100vh;
 }
