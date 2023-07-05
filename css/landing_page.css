@@ -103,8 +103,7 @@ ul > li > a:hover{
 .section-1 .section-content{
     position: absolute;
     top: 0;
-    left: 0;
-    padding-top: 5%;
+    left: 0;   
     float: left;
     width: 100%;
     background-image: url(../images/background_1-2.png);
@@ -292,9 +291,57 @@ ul > li > a:hover{
     color: #7a4077;
 }
 .service-detail .content  p{
+    margin-top: 10px;
     color: #7a4077;
     text-align: left;
     text-transform: none;
     font-weight: 100;
     font-size: 18px;
+}
+/* Section 3 */
+.section-3{
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    width: 100%;
+    padding-bottom: 50px;
+    position: relative;
+    min-height: 100vh;
+    
+}
+.section-3 .section-background{
+    background-image: url(../images/background_1-2.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.section-3 .section-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;   
+    float: left;
+    width: 100%;    
+    padding-bottom: 10vh;
+    
+    
+}
+.section-3 .container .content .content-title{
+    width: 50%;
+    
+}
+.section-3 .container .content .content-detail{
+    width: 50%;
+}
+.section-3 .container .content h1{
+    text-align: left;
+    line-height: 1.5;
+    font-weight: 500;
+    
+}
+.section-3 .container .content p{
+    text-align: left;
+    text-transform: none;
+    font-size: 18px;
+    font-weight: 100;  
 }
