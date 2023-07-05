@@ -250,5 +250,51 @@ ul > li > a:hover{
     width: 100%;
     padding-bottom: 50px;
     position: relative;
-    min-height: 100vh;
+    min-height: max-content;
+}
+.section-2 .section-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-2 .section-content .section-title{
+    padding: 50px 0;
+}
+.section-2 .section-content .section-title h1{
+    text-transform: uppercase;
+    color: #ffffffd1;
+    font-size: 35px;
+    font-weight: 600;
+}
+.section-2 .section-content .section-detail .service-detail{
+    border-radius: 60px 80px 80px 0;
+    background-color: #ffffff;
+    padding: 30px 20px 20px 20px;
+    min-height: 400px;
+}
+.service-detail .image{
+    float:right;
+}
+
+.service-detail .content  h5{
+    display: table-cell;
+    vertical-align: bottom;
+    height: 80px;
+    text-align: left;
+    width: 100%;
+    color: #7a4077;
+    font-weight: 200;
+    font-size: 16px;
+   
+}
+.service-detail .content  h5 a{
+    color: #7a4077;
+}
+.service-detail .content  p{
+    color: #7a4077;
+    text-align: left;
+    text-transform: none;
+    font-weight: 100;
+    font-size: 18px;
 }
