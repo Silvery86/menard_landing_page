@@ -28,7 +28,11 @@ img{
 }
 .container{
     float:none;
-    width: 1200px;
+    
     margin: 0 auto;
     padding: 0 15px;
+}
+.main-body{
+    width: 100%;
+    margin: 0 auto;
 }

@@ -8,11 +8,13 @@
     z-index: 99999;
     
 }
+
 .header-left{
     float: left;
     width: calc(100% - 150px);
     border-bottom: 1px solid #775d64;
 }
+
 .header-right{
     float: left;
     width: 150px;
@@ -100,14 +102,19 @@ ul > li > a:hover{
     position: relative;
     min-height: 100vh;
 }
+.section-1 .section-background{
+    background-image: url(../images/background_1-2.png);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
 .section-1 .section-content{
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;   
     float: left;
     width: 100%;
-    background-image: url(../images/background_1-2.png);
-    height: 100vh;
+    
 }
 .section-content::after{
     content: "";
@@ -251,12 +258,13 @@ ul > li > a:hover{
     position: relative;
     min-height: max-content;
 }
-.section-2 .section-content{
+.section-2 .section-content .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .section-2 .section-content .section-title{
     padding: 50px 0;
 }
@@ -344,4 +352,44 @@ ul > li > a:hover{
     text-transform: none;
     font-size: 18px;
     font-weight: 100;  
+}
+
+/* Section 4 */
+.section-4{
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    width: 100%;
+    padding-bottom: 50px;
+    position: relative;
+    min-height: 100vh;
+}
+
+.section-4 .content{
+    width: 60%;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    
+}
+.section-4 .register-form{
+    width: 40%;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    
+    
+}
+.section-4 .discount-content{
+    max-width: 600px;
+    margin: 20px auto;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.section-4 .discount-content .price-content{
+    width: 60%;
 }
