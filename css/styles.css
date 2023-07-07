@@ -26,12 +26,7 @@ img{
     float: left;
     width:100%;
 }
-.container{
-    float:none;
-    
-    margin: 0 auto;
-    padding: 0 15px;
-}
+
 .main-body{
     width: 100%;
     margin: 0 auto;
