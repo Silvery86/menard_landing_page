@@ -5,35 +5,33 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 99999;
-    
+    z-index: 99999;    
 }
 
 .header-left{
     float: left;
-    width: calc(100% - 150px);
+    width: 85%;
     border-bottom: 1px solid #775d64;
 }
 
 .header-right{
     float: left;
-    width: 150px;
+    width: 15%;
     padding-left: 20px;
 }
 .logo{
     float: left;
-    width: 210px;
+    width: 25%;
     padding: 20px 0;
 }
 .menu{
     float: left;
     padding: 0;
     text-align: center;
-    width: calc(100% - 210px);
+    width: 75%;
     height: 75px;
 }
 ul{
-    
     margin: 0 auto;
     text-align: left;
 }
@@ -44,7 +42,7 @@ ul > li{
     padding: 0 27px;
     
 }
-ul > li::after{
+.header ul > li::after{
     content: "|";
     float: left;
     color: #fff;
@@ -53,6 +51,14 @@ ul > li::after{
     top: calc(50% - 7px);
 }
 ul > li:nth-child(1):after{
+    content: "";
+    float: left;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 7px);
+}
+ul > li:nth-child(4):after{
     content: "";
     float: left;
     color: #fff;
@@ -78,18 +84,22 @@ ul > li > a:hover{
     cursor: pointer;
 }
 .register{
-    font-size: 13px;
+    font-size: 14px;
     text-align: center;
     line-height: 1.5em;
     color: #fff;
     padding: 16px 15px 8px 15px;
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 10px 10px;
     background-color: #7a4077;
     font-weight: bold;
     text-transform: uppercase;
     display: inline-block;
     width: 120px;
     height: 80px;
+}
+.register:hover{
+    color: #ffffff;
+    
 }
 /* Section 1 */
 .section-1{
@@ -116,6 +126,7 @@ ul > li > a:hover{
     left: 0;   
     float: left;
     width: 100%;
+    padding-bottom: 5vh;
     
 }
 .section-content::after{
@@ -143,18 +154,27 @@ ul > li > a:hover{
 .content h2{
     font-size: 32px;
     font-family: bodoni;
+    font-weight: 300;
 }
 .content h1{
-    font-size: 42px;
+    font-size: 50px;
     font-family: bodoni;
+    font-weight: 600;
 }
 .content h3{
     font-size: 22px;
     font-family: bodoni;
+    font-weight: 300;
 }
-.content h5{
+.content h6{
+    font-size: 18px;
+    font-weight: 200;
+}
+.section-1 .content h5{
     padding: 5px 0;
-    font-size: 15px;
+    font-size: 18px;
+    line-height: 0.5;
+    font-weight: 600;
 }
 .content .line{
     height: 2px;
@@ -173,7 +193,7 @@ ul > li > a:hover{
 }
 .discount-content .price-content{
     width: calc(60% - 10px);
-    border: 3px solid #ffffff;
+    border: 4px solid #ffffff;
     text-align: center;
     margin: 0 5px;
     float: left;
@@ -191,13 +211,14 @@ ul > li > a:hover{
     margin: 0 5px;
     height: 80px;
     background-color: transparent;
-    border: 3px solid #ffffff;
+    border: 4px solid #ffffff;
     border-radius: 0;
 }
 .discount-content .price-content .price-title{
     width: 50%;
-    font-size: 18px;
-    font-weight: 200;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: bodoni;
 }
 .discount-content .price-content .price-detail{
     width: 50%;
@@ -209,8 +230,9 @@ ul > li > a:hover{
     height: 60%;
     background-color: #ffffff;
     color: #7a4077;
+    font-family: bodoni;
     font-size: 30px;
-    font-weight: 200;
+    font-weight: 600;
     
 }
 .discount-content .price-content .price-detail .price{
@@ -218,8 +240,8 @@ ul > li > a:hover{
     height: 40%;
     padding: 5px;
     font-size: 13px;
-    font-weight: 100;
-    border: 3px solid #ffffff;
+    font-weight: 500;
+    border-left: 4px solid #ffffff;
     border-bottom: 0;
     border-top: 0;
 }
@@ -246,7 +268,8 @@ ul > li > a:hover{
     float: left;
     margin-top: 50px;
     text-transform: none;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 200;
 }
 
 /* Section 2 */
@@ -279,8 +302,9 @@ ul > li > a:hover{
 .section-2 .section-content .section-detail .service-detail{
     border-radius: 60px 80px 80px 0;
     background-color: #ffffff;
-    padding: 30px 20px 20px 20px;
-    min-height: 400px;
+    padding: 50px 20px 20px 40px;
+    height: 450px;
+    margin:10px
 }
 .service-detail .image{
     float:right;
@@ -295,18 +319,20 @@ ul > li > a:hover{
     color: #7a4077;
     font-weight: 200;
     font-size: 16px;
+    font-weight: 400;
    
 }
 .service-detail .content  h5 a{
     color: #7a4077;
+    font-weight: 400;
 }
 .service-detail .content  p{
     margin-top: 10px;
     color: #7a4077;
     text-align: left;
     text-transform: none;
-    font-weight: 100;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 16px;
 }
 /* Section 3 */
 .section-3{
@@ -346,15 +372,15 @@ ul > li > a:hover{
 }
 .section-3 .container .content h1{
     text-align: left;
-    line-height: 1.5;
+    line-height: 1.2;
     font-weight: 500;
     
 }
 .section-3 .container .content p{
     text-align: left;
     text-transform: none;
-    font-size: 18px;
-    font-weight: 100;  
+    font-size: 16px;
+    font-weight: 400;  
 }
 
 /* Section 4 */
@@ -366,8 +392,18 @@ ul > li > a:hover{
     width: 100%;
     padding-bottom: 50px;
     position: relative;
-    min-height: 800px;
+    min-height: 900px;
     height: 100vh;
+}
+.section-4 .section-content .container .flexbox::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.section-4 .section-content .container .flexbox::before{
+    content: "";
+    clear: both;
+    display: table;
 }
 .section-4 .section-content{
     position: absolute;
@@ -383,8 +419,27 @@ ul > li > a:hover{
     flex-flow: row nowrap;
 }
 .section-4 .content{
-    width: 70%;
+    width: 60%;
+    padding: 5%;
     float: left;
+    padding-top: 0px ;
+}
+.section-4 .content h2{
+    font-size: 25px;
+    margin: 0;
+}
+.section-4 .content h1{
+    font-size: 30px;
+    margin: 0;
+}
+.section-4 .content h6{
+    font-size: 16px;
+    margin: 10px 0;
+}
+.section-4 .content h5{
+    font-size: 16px;
+    line-height: 1;
+    padding: 0;
 }
 .section-4 .register-form{
     width: 30%;
@@ -393,7 +448,12 @@ ul > li > a:hover{
     background-color: white;
     border-radius: 40px;
     padding:50px 40px 30px 40px;
-    
+    position: relative;
+}
+.register-form .stamp{
+    position: absolute;
+    top: -26px;
+    left: 144px;
 }
 .section-4 .discount-content{
     max-width: 600px;
@@ -409,7 +469,7 @@ ul > li > a:hover{
 }
 .register-form .form-title h5{
     color: #7a4077;
-    font-family: opensanb;
+    font-family: 'Open Sans';
     text-transform: uppercase;
     font-size: 20px;
     padding: 20px 0;
@@ -453,4 +513,87 @@ ul > li > a:hover{
     border: 2px solid #7a4077;
     border-radius: 20px;
     text-transform: uppercase;
+}
+.section-4 .discount-date{
+    margin: 0;
+}
+.section-4 .discount-date h4{
+    font-size: 20px;
+}
+.section-4 .discount-date h3{
+    font-size: 18px;
+    font-family: 'Open sans';
+    font-weight: 600;
+    text-transform: uppercase;
+}
+/* FOOTER SECTION */
+.footer-content{
+    float: left;
+    width: 100%;
+    background-color: #653263;
+    padding: 25px 0;
+    
+}
+
+.footer-content .flexbox{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.flex-content .get-voucher-method{
+    position: relative;
+    width: 100%;
+}
+.flexbox .flex-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.flex-content .steps ul{
+    border: none;
+    padding: 10px 0;
+}
+.flex-content .steps ul > li {
+    border: none;
+    padding: 5px 0;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 200;
+    color: #ffffffe2;
+}
+.flex-content .contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    text-decoration: none;   
+}
+.flex-content h3{
+    font-size: 18px;
+}
+.flex-content .contact h5{
+    font-size: 16px;
+    font-weight: 200;
+}
+.flex-content .contact h5 a{
+    color: #ffffff;
+}
+.get-voucher-method .line{
+    height: 2px;
+    width: 50px;
+    background-color: #ffffff;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.copyright h4{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Open Sans';
 }
