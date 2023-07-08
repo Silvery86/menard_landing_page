@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/landing_page.css">
-    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
@@ -18,17 +20,19 @@
             <div class="container">
                 <div class="header-left">
                     <div class="logo">
-                        <img src="./images/Logo.png" alt="Logo"> 
+                        <a href="#home">
+                            <img src="./images/Logo.png" alt="Logo"> 
+                        </a>
                     </div>
                     <ul class="menu">
                         <li class="dichvu">
-                            <a>Dịch vụ</a>
+                            <a href="#service">Dịch vụ</a>
                         </li>
                         <li class="lichsu">
-                            <a>Lịch sử thương hiệu</a>
+                            <a href="#about">Lịch sử thương hiệu</a>
                         </li>
                         <li class="chuongtrinh">
-                            <a>Chương Trình</a>
+                            <a href="#registry">Chương Trình</a>
                         </li>
                         <li class="facebook">        
                             <a>
@@ -39,11 +43,47 @@
                     </ul>
                 </div>
                 <div class="header-right">
-                    <a href="register" class="register">Đăng ký trải nghiệm</a>
-                </div>            
+                    <a href="#registry-form" class="register">Đăng ký trải nghiệm</a>
+                </div>
+            </div>
+            <div class="header-menu">
+                <label for="nav-mobile" class="menu-icon">
+                    <img src="./images/menu-icon.png" alt="menu icon"/>
+                    <input type="checkbox" class="nav-input" id="nav-mobile"/>
+                    <label for="nav-mobile" class="nav-overlay">
+                    </label>
+                    <div class="nav-mobile">
+                        <ul class="menu-mobile">
+                            <li class="logo">
+                                <a href="#home">
+                                    <img src="./images/Logo.png" alt="Logo"> 
+                                </a>
+                            </li>
+                            <li class="dichvu">
+                                <a href="#service">Dịch vụ</a>
+                            </li>
+                            <li class="lichsu">
+                                <a href="#about">Lịch sử thương hiệu</a>
+                            </li>
+                            <li class="chuongtrinh">
+                                <a href="#registry">Chương Trình</a>
+                            </li>
+                            <li class="facebook">        
+                                <a>
+                                    <i class="fa-brands fa-facebook" style="color: #fafafa;"></i>
+                                    Mernard Vietnam
+                                </a>
+                            </li>
+                        </ul>
+                    </div>            
+                </label>
+                
+                <div class="logo">
+                    <img src="./images/Logo.png" alt="Logo"> 
+                </div>
             </div>
         </header>
-        <section class="section-1" style="background-image: url(images/background_1.png);">
+        <section class="section-1" id="home" style="background-image: url(images/background_1.png);">
             <div class="section-background">
                 <div class="section-content">
                     <div class="container">
@@ -66,7 +106,7 @@
                                     </div>
                                 </div>
                                 <div class="register">
-                                    <a href="">ĐĂNG KÝ NGAY</a>
+                                    <a href="#registry-form">ĐĂNG KÝ NGAY</a>
                                 </div>
                             </div>
                             <div class="discount-date">
@@ -77,7 +117,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-2" style="background-image: url(images/background-caro.jpg);">
+        <section class="section-2" id="service" style="background-image: url(images/background-caro.jpg);">
             <div class="section-content">
                 <div class="container">    
                     <div class="section-title">
@@ -86,8 +126,7 @@
                     <div class="section-detail">
                         <div class="container">
                             <div class="service-list">
-                                <div class="row">
-        
+                                <div class="row">        
                                     <div class="col-sm-6 col-md-4">
                                         <div class="service-detail">
                                             <div class="image">
@@ -160,7 +199,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-3" style="background-image: url(images/background_3.png);">
+        <section class="section-3" id="about" style="background-image: url(images/background_3.png);">
             <div class="section-background">
                 <div class="section-content">
                     <div class="container">
@@ -198,7 +237,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-4" style="background-image: url(images/background-caro.jpg);">
+        <section class="section-4" id="registry" style="background-image: url(images/background-caro.jpg);">
             <div class="section-content">
                 <div class="container">
                     <div class="flexbox">
@@ -225,7 +264,7 @@
                                 <h3>Duy nhất tại vincom Hải Phòng</h3>
                             </div>
                         </div>
-                        <div class="register-form">
+                        <div id="registry-form" class="register-form">
                             <div class="stamp">
                                 <img src="./images/paper-plate-2-pink.png" alt="paper plate" />
                             </div>
@@ -259,7 +298,7 @@
                                     <input type="" class="" placeholder="Số điện thoại"/>
                                 </div>
                                 <div class="form-submit">
-                                    <button>Đăng ký ngay</button>
+                                    <button type="button"> <a href="./thank_you.html">Đăng ký ngay</a></button>
                                 </div>
                             </div>
                         </div>
@@ -269,11 +308,9 @@
         </section>
         <footer>
             <div class="footer-content">
-
                 <div class="container">
                     <div class="flexbox">
                         <div class="flex-content">
-
                             <div class="get-voucher-method">
                                 <h3 class="title">
                                     CÁCH THỨC NHẬN ƯU ĐÃI
@@ -285,7 +322,7 @@
                                         <li>Bước 3: Đưa mã code để nhận ưu đãi tại cửa hàng</li>
                                     </ul>
                                 </div>
-                                <div class="line">
+                                <div class="line-1">
                                 </div>
                             </div>
                             <div class="contact">
@@ -293,7 +330,9 @@
                                 <h5>Liên hệ với chúng tôi:</h5>
                                 <h5>Hotline: <a>01679.01.01.01</a></h5>
                                 <h5>Fanpage: <a>facebook.com/menard.vn</a></h5>
-                                <h5>Website: <a>www.shop.menard.vn</a></h5>                        
+                                <h5>Website: <a>www.shop.menard.vn</a></h5>    
+                                <div class="line-2">
+                                </div>                    
                             </div>
                         </div>
                         <div class="copyright">
@@ -304,5 +343,9 @@
             </div>
         </footer>
     </div>
+    <a href="#" id="scrollTop" >
+        <i class="fa-solid fa-angle-up" style="color: #ffffff;"></i>
+    </a>
+    <script src="js/landing_page.js"></script>
 </body>
 </html>

@@ -1,0 +1,162 @@
+/* RESPOSIVE */
+@media only screen and (max-width: 1200px){
+    .register-form .stamp{
+        position: absolute;
+        top: -26px;
+        left: 114px;
+    }
+}
+@media only screen and (max-width: 991px){
+    .header .container{
+        display: none;
+    }
+    .header .header-menu{
+        display: block;
+        cursor: pointer;
+    }
+    .header-menu{
+        background-color: rgba(122, 64, 119, 0.8);
+        height: 60px;
+    }
+    .header-menu{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-menu .menu-icon{
+        display: block;
+        width: 25%;
+        margin: 0;
+        padding: 20px;
+        float: left;
+    }
+    .header-menu .logo{
+        padding: 20px;
+        width: 75%;
+        margin: 0;
+        padding: 10px 13%;
+    }
+    .section-2 .section-title{
+        text-align: center;
+    }
+    .section-4{
+        min-height: 180vh;
+        
+    }
+    .section-4 .section-content{
+        padding-bottom: 15vh;
+    }
+    .section-4 .section-content .container .flexbox{
+        flex-flow: column nowrap;
+    }
+    .section-4 .content{
+        width: 100%;
+       
+    }
+    .section-4 .register-form{
+        width: 100%;
+    }
+    .register-form .stamp{
+        position: absolute;
+        top: -26px;
+        left: 333px;
+    }
+    footer{
+        display: block;
+    }
+
+}
+@media only screen and (max-width: 768px){
+    .header-menu{
+        background-color: transparent;
+        height: 60px;
+    }
+    
+    .section-1 .content h2{
+        font-size: 30px;
+    }
+    .section-1 .content h1{
+        font-size: 35px;
+        margin: 5px 0;
+    }
+    .section-1 .content h3{
+        font-size: 25px;
+        margin: 5px 0;
+    }
+    .section-2 .section-title h1{
+        font-size: 18px;
+        padding: 0 30px;
+        line-height: 1.5;
+    }
+    .section-2 .service-list{
+        padding: 20px 60px;
+    }
+    .section-2 .section-content .service-list .service-detail{
+        margin: 50px 0;
+    }
+    .section-3 .content{
+        padding: 30px;
+        
+    }
+    .section-3 .content h1{
+        font-size: 35px;
+    }
+    .section-3 .container .content .content-detail{
+        width: 70%;
+        margin: 0;
+        padding: 0;
+    }
+    .section-3 .content .content-detail p{
+        font-size: 13px;
+    }
+    .section-4 .section-content .container .flexbox{
+        justify-content: center;
+        align-items: center;
+    }
+    .section-4 .section-content .container .flexbox .register-form{
+        margin: 10px;
+        width: 70%;
+    }
+    .register-form .stamp{
+        position: absolute;
+        top: -26px;
+        left: 213px;
+    }
+    .footer-content .container .flexbox{
+        padding: 40px;
+    }
+    .footer-content .container .flexbox .flex-content{
+        flex-direction: column;
+        
+    }
+    .footer-content .get-voucher-method .steps ul li:last-child{
+        margin-bottom: 35px;
+    }
+    .footer-content .get-voucher-method .line-1{
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: #ffffff;
+    }
+    .footer-content .contact{
+        margin-top: 30px;
+    }
+    .footer-content .contact .line-2{
+        display: block;
+        height: 3px;
+        width: 50px;
+        background-color: #ffffff;
+        padding: 0;
+        
+        bottom: 0;
+        left: 0;
+    }
+    .footer-content .container .flexbox .flex-content .contact{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+}

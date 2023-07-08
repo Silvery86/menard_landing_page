@@ -7,13 +7,23 @@
     left: 0;
     z-index: 99999;    
 }
-
+.main-body .active {
+    background-color: rgba(122, 64, 119, 0.8);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.main-body .active .register{
+    background-color: #ffffff;
+    color: #7a4077;
+}
 .header-left{
     float: left;
     width: 85%;
     border-bottom: 1px solid #775d64;
 }
-
+.header-menu{
+    display: none;
+}
 .header-right{
     float: left;
     width: 15%;
@@ -50,6 +60,7 @@ ul > li{
     left: 0;
     top: calc(50% - 7px);
 }
+
 ul > li:nth-child(1):after{
     content: "";
     float: left;
@@ -302,7 +313,7 @@ ul > li > a:hover{
 .section-2 .section-content .section-detail .service-detail{
     border-radius: 60px 80px 80px 0;
     background-color: #ffffff;
-    padding: 50px 20px 20px 40px;
+    padding: 50px 20px 40px 20px;
     height: 450px;
     margin:10px
 }
@@ -514,6 +525,17 @@ ul > li > a:hover{
     border-radius: 20px;
     text-transform: uppercase;
 }
+.register-form .form-body button a{
+    color: #7a4077;
+    text-decoration: none;
+}
+.register-form .form-body button a:hover{
+    color: #ffffff;
+}
+.register-form .form-body button:hover{
+   
+    background-color: #7a4077;
+}
 .section-4 .discount-date{
     margin: 0;
 }
@@ -531,8 +553,7 @@ ul > li > a:hover{
     float: left;
     width: 100%;
     background-color: #653263;
-    padding: 25px 0;
-    
+    padding: 30px 0;
 }
 
 .footer-content .flexbox{
@@ -583,7 +604,7 @@ ul > li > a:hover{
 .flex-content .contact h5 a{
     color: #ffffff;
 }
-.get-voucher-method .line{
+.get-voucher-method .line-1{
     height: 2px;
     width: 50px;
     background-color: #ffffff;
@@ -592,8 +613,94 @@ ul > li > a:hover{
     bottom: 0;
     left: 0;
 }
+.contact .line-2{
+    display: none;
+}
 .copyright h4{
     font-size: 18px;
     font-weight: 400;
     font-family: 'Open Sans';
+}
+#scrollTop.active{
+    display: block;
+}
+#scrollTop{
+    display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 100px;
+    background: #7a4077;
+    color: #fff;
+    width: 34px;
+    height: 34px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 3px;
+    z-index: 99999;
+    transition: transform linear 6s;
+}
+/* Responsive havbar */
+.header .nav-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.47);
+    display: none;
+    animation: fadeIn linear 0.3s;
+}
+.nav-mobile{
+    background-color: #7a4077;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    max-width: 100%;
+    transform: translateX(-100%);
+    transition: transform linear 0.3s;
+}
+.nav-mobile .menu-mobile{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.header .nav-mobile ul{
+    width: 100%;
+}
+.nav-input{
+    display: none;
+}
+.header .nav-mobile ul > li{
+    text-align: left;
+    width: 100%;
+    border-bottom: 1px #ffffff solid;
+}
+.header .nav-mobile ul > li a{
+    width: 100%;
+}
+.header .nav-mobile ul > li:first-child a{
+    border: none;
+}
+.header .nav-mobile ul > li::after{
+    display: none;
+}
+.nav-input:checked ~ .nav-overlay{
+    display: block;
+}
+
+.nav-input:checked ~ .nav-mobile{
+    transform: translateX(0%)
+}
+.nav-input:checked ~ .main-body{
+    transform: translate(30%)
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
