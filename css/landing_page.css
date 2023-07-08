@@ -100,11 +100,13 @@ ul > li > a:hover{
     width: 100%;
     padding-bottom: 50px;
     position: relative;
-    min-height: 100vh;
+    min-height: 800px;
+    height: 100vh;
 }
 .section-1 .section-background{
     background-image: url(../images/background_1-2.png);
     height: 100vh;
+    min-height: 800px;
     width: 100%;
     position: absolute;
 }
@@ -315,7 +317,8 @@ ul > li > a:hover{
     width: 100%;
     padding-bottom: 50px;
     position: relative;
-    min-height: 100vh;
+    min-height: 800px;
+    height: 100vh;
     
 }
 .section-3 .section-background{
@@ -363,14 +366,15 @@ ul > li > a:hover{
     width: 100%;
     padding-bottom: 50px;
     position: relative;
-    min-height: 100vh;
+    min-height: 800px;
+    height: 100vh;
 }
 .section-4 .section-content{
     position: absolute;
     bottom: 0;
     left: 0;
     float: left;
-
+    padding-bottom: 5%;
     width: 100%;
 
 }
