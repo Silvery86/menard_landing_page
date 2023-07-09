@@ -224,8 +224,10 @@ footer{
     font-weight: 400;
     font-family: 'Open Sans';
 }
-/* Responsive havbar */
-.header .nav-overlay{
+nav .header-menu{
+    flex-direction: row;
+}
+nav .nav-overlay{
     position: fixed;
     top: 0;
     left: 0;
@@ -241,7 +243,7 @@ footer{
     top: 0;
     left: 0;
     bottom: 0;
-    width: 30%;
+    width: 320px;
     max-width: 100%;
     transform: translateX(-100%);
     transition: transform linear 0.3s;
@@ -249,37 +251,45 @@ footer{
 .nav-mobile .menu-mobile{
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 0 20px 20px 20px;
 }
-.header .nav-mobile ul{
+nav .nav-mobile ul{
     width: 100%;
 }
 .nav-input{
     display: none;
 }
-.header .nav-mobile ul > li{
+nav .nav-mobile ul > li{
     text-align: left;
     width: 100%;
     border-bottom: 1px #ffffff solid;
 }
-.header .nav-mobile ul > li a{
+nav .nav-mobile ul > li a{
     width: 100%;
+    padding: 10px;
 }
-.header .nav-mobile ul > li:first-child a{
+nav .nav-mobile ul > li:first-child a{
     border: none;
 }
-.header .nav-mobile ul > li::after{
+nav .nav-mobile ul > li::after{
     display: none;
+}
+.nav-input:checked ~ #main-content{
+    transform: translateX(320px) !important;
 }
 .nav-input:checked ~ .nav-overlay{
     display: block;
 }
 
 .nav-input:checked ~ .nav-mobile{
-    transform: translateX(0%)
+    transform: translateX(0%);
 }
-.nav-input:checked ~ .main-body{
-    transform: translate(30%)
+#main-content{
+    transition: transform linear 0.3s;
+}
+#main-content.slide{
+    transform: translateX(320px);
+    
 }
 @keyframes fadeIn{
     from{
@@ -288,4 +298,8 @@ footer{
     to{
         opacity: 1;
     }
+}
+body {
+  overflow-x: hidden;
+  
 }

@@ -14,55 +14,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="main-header" class="header">
-        <div class="container">
-            <div class="header-left">
-                <div class="logo">
-                    <a href="./landing_page.html">
-                        <img src="./images/Logo.png" alt="Logo"> 
-                    </a>
-                </div>
-                <ul class="menu">
-                    <li class="dichvu">
-                        <a href="./landing_page.html">Dịch vụ</a>
-                    </li>
-                    <li class="lichsu">
-                        <a href="./landing_page.html">Lịch sử thương hiệu</a>
-                    </li>
-                    <li class="./landing_page.html">
-                        <a href="./landing_page.html">Chương Trình</a>
-                    </li>
-                    <li class="facebook">        
-                        <a>
-                            <i class="fa-brands fa-facebook" style="color: #fafafa;"></i>
-                            Mernard Vietnam
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            
-        </div>
+    <nav>
         <div class="header-menu">
-            <label for="nav-mobile" class="menu-icon">
-                <img src="./images/menu-icon.png" alt="menu icon"/>
-                <input type="checkbox" class="nav-input" id="nav-mobile"/>
-                <label for="nav-mobile" class="nav-overlay">
-                </label>
+            <label for="nav-mobile-input" class="menu-icon">
+            <img src="./images/menu-icon.png" id="menu-icon" alt="menu icon"/>
+            <input type="checkbox" class="nav-input" id="nav-mobile-input"/>
+            <label for="nav-mobile-input" class="nav-overlay">
+            </label>
+                          
                 <div class="nav-mobile">
                     <ul class="menu-mobile">
                         <li class="logo">
-                            <a href="./landing_page.html">
+                            <a href="#home">
                                 <img src="./images/Logo.png" alt="Logo"> 
                             </a>
                         </li>
                         <li class="dichvu">
-                            <a href="./landing_page.html">Dịch vụ</a>
+                            <a href="#service">Dịch vụ</a>
                         </li>
                         <li class="lichsu">
-                            <a href="./landing_page.html">Lịch sử thương hiệu</a>
+                            <a href="#about">Lịch sử thương hiệu</a>
                         </li>
                         <li class="chuongtrinh">
-                            <a href="./landing_page.html">Chương Trình</a>
+                            <a href="#registry">Chương Trình</a>
                         </li>
                         <li class="facebook">        
                             <a>
@@ -72,15 +46,43 @@
                         </li>
                     </ul>
                 </div>            
-            </label>
+            </label>  
             
             <div class="logo">
-                <a href="./landing_page.html">
-                    <img src="./images/Logo.png" alt="Logo"> 
-                </a>
+                <img src="./images/Logo.png" alt="Logo"> 
             </div>
         </div>
-    </header>
+    </nav>
+    <div class="main-body" id="main-content">
+        <header id="main-header" class="header">
+            <div class="container">
+                <div class="header-left">
+                    <div class="logo">
+                        <a href="#home">
+                            <img src="./images/Logo.png" alt="Logo"> 
+                        </a>
+                    </div>
+                    <ul class="menu">
+                        <li class="dichvu">
+                            <a href="#service">Dịch vụ</a>
+                        </li>
+                        <li class="lichsu">
+                            <a href="#about">Lịch sử thương hiệu</a>
+                        </li>
+                        <li class="chuongtrinh">
+                            <a href="#registry">Chương Trình</a>
+                        </li>
+                        <li class="facebook">        
+                            <a>
+                                <i class="fa-brands fa-facebook" style="color: #fafafa;"></i>
+                                Mernard Vietnam
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </header>
     <section class="section" style="background-image: url(images/thank-you-background.png);">
         <div class="section-background">
             <div class="section-content">
@@ -138,5 +140,7 @@
             </div>
         </div>
     </footer>
+    </div>
+    <script src="js/thank_you.js"></script>
 </body>
 </html>

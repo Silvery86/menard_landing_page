@@ -7,6 +7,13 @@
     }
 }
 @media only screen and (max-width: 991px){
+    nav{
+        height: 50px;
+        position: fixed;
+        float: left;
+        width: 100%;
+        z-index: 99999;  
+    }
     .header .container{
         display: none;
     }
@@ -34,10 +41,14 @@
         float: left;
     }
     .header-menu .logo{
-        padding: 20px;
         width: 75%;
+        padding: 0 13%;
+    }
+    .header-menu .menu-mobile .logo{
+        padding: 0px 20px;
+        width: 100%;
         margin: 0;
-        padding: 10px 13%;
+        
     }
     .section-2 .section-title{
         text-align: center;
@@ -73,6 +84,13 @@
     .header-menu{
         background-color: transparent;
         height: 60px;
+        justify-content: flex-start;
+    }
+    .header-menu .logo{
+        display: none;
+    }
+    .header-menu .menu-mobile .logo{
+        display: block;
     }
     
     .section-1 .content h2{

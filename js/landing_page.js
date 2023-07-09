@@ -16,3 +16,10 @@ const scrollTop = document.getElementById('scrollTop');
 scrollTop.onclick = function(){
     document.body.scrollTop;
 }
+
+const mainContent = document.getElementById('main-content');
+const navInput = document.getElementById('nav-mobile-input');
+
+navInput.onclick = function(){
+    mainContent.classList.toggle("slide")
+}
